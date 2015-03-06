@@ -1,0 +1,21 @@
+Le labyrinthe
+
+Projet réalise par Partene Darius, Măcelaru Alina, Chiriţă Matei, Dunca Tina
+
+Le but de ce jeu est de traverser le labyrinthe (on commence de point A et on doit arriver en B), en choisissant le plus court chemin possible, ou le plus convenable, mais sans arriver dans un espace ferme des murs. 
+Règles Le labyrinthe est compose des chemins et des murs qui séparent les vois d'accès. En même temps, le labyrinthe contient des entraves pour le joueur.
+
+Ce jeu est utilisé en général pour les enfants, pour développer leur capacité d’orientation et leur mémoire visuelle. 
+Nous avons crée un programme qui calcule la route le plus courte qui permet de traverser du A aux B. 
+Comment ça marche ? Notre labyrinthe est compose dans un chaine de caractères qui forme une matrice aven n lignes et m colonnes.
+Le programme calcule a chaque moment les possibilités de parcourir la matrice. Il a comme point de départ le point A et comme point d’arrive le point B. On a utilisé : 0 – pour les murs Espace – pour les routes possibles A – pour le point de départ B – pour le point d’arriver
+
+On a une méthode pour déchiffrer le labyrinthe qui a cinq paramètres : 
+Labyrinthe –
+X – pour la position de x 
+Y – pour la position de y
+n- pour le nombre des lignes
+m- pour le nombre des colonnes
+On a créé une méthode qui vérifie si les éléments de la matrice sont déjà vus et si on a des murs dans l’itinéraire choisi.
+Elle affiche la plus court route qui trouve la solution du jeu. On a le point de départ A pour la position initiale et x pour le route.
+Le moment quand une cellule de labyrinthe a plusieurs possibilités de sortie l'algorithme les vérifie. Quand le fonction trouve une solution valable, le programme s’arrête là.
