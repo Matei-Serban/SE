@@ -5,7 +5,7 @@ end="B"
 visited="-"
 good="x"
 
-
+""" Aici introducem labirintul pe care vrem sa-l rezolvam """
 LABYRINTH = """
 0000000000000000000000000000000000000000000000000000000000000
 A        0              0        0        0     0           0
@@ -72,7 +72,7 @@ A        0              0        0        0     0           0
 """
 
 
-""" on  verifie si les elements de la matrice sont deja visite ou pas. La verification se realise en refaisant le chemin, et en retournant si elle trouve une voie bloquee. """
+""" Verificam daca celule din matrice sunt visitate. O data ce verificarea a avut loc, se revine la o celula anterioara in cazul in care se constata o cale blocata   """
 
 def solve(labyrinth, x, y, m, n):
     path = False
@@ -88,10 +88,10 @@ def solve(labyrinth, x, y, m, n):
             path = True
     return path
 
-""" labyrinth- prend une liste du caracteres pour le labyrinthe
-    x- c'est la position de x
-    y- c'est la position de y
-    m, n- c'est la dimension de la matrice (matrice avec m lignes, n colonnes) """
+""" labyrinth- ia o lista de caractere pentru labirint
+    x- pozitia x
+    y- pozitia y
+    m, n- dimensiunea matricei(m linii, n coloane) """
 
 
 def main():
@@ -103,4 +103,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-"""ici c'est l'initialisation du contructeur main pour trouver la solution du labyrinthe""" 
+"""Initializarea constructorului main pentru a gasi o solutie pentru labirintul dat""" 
